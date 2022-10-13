@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
 
+# Build or Run Procedure
+
+Download the latest stable of nodejs(https://nodejs.org/dist/v16.18.0/node-v16.18.0-x64.msi) and then install the Angular CLI using the above link. Move to the folder and do npm install once its finished then do npm start and then Navigate to `http://localhost:4200/` in Chrome or any other browser.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
