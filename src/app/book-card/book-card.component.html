@@ -1,0 +1,18 @@
+<div class="card-overview">
+    <div class="book-sorting">
+        <button type="button" (click)="onFiterSelected('bookNameAscending')">Sort Book Ascending</button>
+        <button type="button" (click)="onFiterSelected('bookNameDescending')">Sort Book Descending</button>
+        <button type="button" (click)="onFiterSelected('publishYearAscending')">Published Year Ascending</button>
+        <button type="button" (click)="onFiterSelected('publishYearDescending')">Puliched Year Descending</button>
+    </div>
+    <div *ngFor="let book of books" class="book-card">
+        <div class="card-box-shadow">
+            <img [src]="book.imageUrl" />
+            <div>
+                <h4><a class="book-title" [href]="book.purchaseLink" target="_blank">{{book.title}}</a></h4>
+                <h4>Publishedon: {{book.PublishDate}}</h4>
+                <a [href]="book.purchaseLink" target="_blank" class="book-button">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</div>
